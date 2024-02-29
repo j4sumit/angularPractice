@@ -1,5 +1,6 @@
-<h1>Events | blur | keyup, | mouseover etc</h1>
-<input type="text" placeholder="Enter Name" #box (keyup)="getData(box.value)"><br/><br/>
-<button (click)="getName(box.value)">Call Funtion</button>
-<h1 >Name is : {{name}}</h1>
-<h1 >Display name after button click : {{name1}}</h1>
+<h1>Counter program</h1>
+<h1>Result : {{count}}</h1>
+<button (click)="counter('increment')">Increment</button>
+<br>
+<br>
+<button (click)="counter('decrement')">Increment</button>

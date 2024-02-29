@@ -7,15 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Angular 14';
-  name:any="";
-  name1:any=""
-  getData(data:any){
-    this.name=data;
-    console.log("data:-",data)
-  }
-  getName(data:any){
-    this.name1=data;
-    console.log("data:",data)
-  }
-
+count = 0;
+counter(data:string){
+  data =="increment"? this.count++ :this.count--
+  // this.count++
+}
 }
