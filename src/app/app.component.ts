@@ -7,22 +7,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Angular 14';
-  getName(){
-    console.log("Function called")
-  }
+  name:any="";
+  name1:any=""
   getData(data:any){
-    console.log(data)
+    this.name=data;
+    console.log("data:-",data)
   }
-  getKeyDown(data:any){
-    console.log(data)
+  getName(data:any){
+    this.name1=data;
+    console.log("data:",data)
   }
-  getKeyBlur(data:any){
-    console.log(data)
-  }
-  getKeyInput(data:any){
-    console.log(data)
-  }
-  getData1(data:any){
-    console.log(data)
-  }
+
 }

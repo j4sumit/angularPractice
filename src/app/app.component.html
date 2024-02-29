@@ -1,11 +1,5 @@
 <h1>Events | blur | keyup, | mouseover etc</h1>
-<br/><br/>
-<!-- <button (click)="getName()">Call Funtion</button> -->
-<br/><br/>
-<input type="text" placeholder="event keyUp" #box1 (keyup)="getData(box1.value)"><br/><br/>
-<input type="text" placeholder="event keyDown" #box2 (keydown)="getKeyDown(box2.value)">
-<input type="text" placeholder="event blur" #box3 (blur)="getKeyBlur(box3.value)">
-<input type="text" placeholder="event input" #box4 (input)="getKeyInput(box4.value)">
-
-<h1 (mouseover)="getData('over')">code step by step</h1>
-<h1 (mouseleave)="getData1('mouseleave')">code step by step</h1>
+<input type="text" placeholder="Enter Name" #box (keyup)="getData(box.value)"><br/><br/>
+<button (click)="getName(box.value)">Call Funtion</button>
+<h1 >Name is : {{name}}</h1>
+<h1 >Display name after button click : {{name1}}</h1>
