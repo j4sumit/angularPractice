@@ -7,8 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Angular 14';
-  
-  getVal(){
-    return "Result from function"
+  getName(name:string, secondName:string){
+    alert(name)
+    alert(secondName)
   }
+  
 }
