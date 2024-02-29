@@ -7,7 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Angular 14';
-  name="Sumit"
-  email="skc@gmail.com"
-  disable=false;
+  status="yes";
 }

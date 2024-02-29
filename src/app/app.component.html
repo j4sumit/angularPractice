@@ -1,6 +1,16 @@
-<h1 >Interpolation vs Property Binding</h1>
-<h1 >Interpolation vs Property Binding</h1>
-<br/>
-<input type="text" placeholder="Enter name" name="name" value={{name}} disabled="{{disable}}">
-<br/><br/>
-<input type="text" placeholder="Enter Email" name="email" [value]=email [disabled]=disable>
+<!-- <h1 >If else topic</h1> -->
+<!-- <h1 *ngIf="status else elseBlock">
+    If Block
+</h1>
+<ng-template #elseBlock>
+<h1>Else Block</h1>
+</ng-template> -->
+
+<h1 *ngIf='status=="yes"; then ifBlock else elseBlock'></h1>
+<ng-template #ifBlock>
+<h1>If Block</h1>
+</ng-template>
+
+<ng-template #elseBlock>
+<h1>Else Block</h1>
+</ng-template>
