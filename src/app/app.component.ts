@@ -7,5 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Angular 14';
-  color="dsfdsf"
+users =["Sumit","amit","Sanjay","Rahual","Pramod"]
+userDetails =[
+  {name:"Sumit", Email:"Sumit@gmail.com", phone:"908904380911"},
+  {name:"Amit", Email:"aumit@gmail.com", phone:"908904380922"},
+  {name:"Sanjay", Email:"Sanjay@gmail.com", phone:"908904380933"},
+  {name:"Rahul", Email:"Rahul@gmail.com", phone:"908904380944"}
+]
 }
