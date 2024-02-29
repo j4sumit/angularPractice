@@ -7,9 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Angular 14';
-count = 0;
-counter(data:string){
-  data =="increment"? this.count++ :this.count--
-  // this.count++
-}
+  name="Sumit"
+  email="skc@gmail.com"
+  disable=false;
 }
