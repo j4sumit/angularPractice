@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = ':- Angular 14';
+  title = 'Angular 14';
+  
+  getVal(){
+    return "Result from function"
+  }
 }
