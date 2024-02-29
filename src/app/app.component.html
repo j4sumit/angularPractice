@@ -1,5 +1,12 @@
-<h1>For Loop</h1>
+<h1>Nested Loop// Multi dimension Array</h1>
 
 <h1 *ngFor="let data of users">{{data}}</h1>
 
-<h1 *ngFor="let data of userDetails">{{data.name}} - {{data.Email}} --{{data.phone}}</h1>
+<ul *ngFor="let data of userDetails">
+  <li>{{data.name}} </li> 
+  <li>{{data.Email}} </li>
+  <ol *ngFor="let data of data.SocialAccount">
+    <li>{{data}}</li>
+  </ol>
+  
+</ul>
