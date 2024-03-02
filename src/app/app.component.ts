@@ -9,7 +9,8 @@ import { Component } from '@angular/core'
 })
 export class AppComponent {
   title = 'Angular 14';
-  getVal(item:HTMLInputElement){
-console.log(item);
+  today= Date();
+  capString(item:string){
+return item.toUpperCase()
   }
 }
