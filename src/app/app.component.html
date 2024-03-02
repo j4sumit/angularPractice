@@ -1,7 +1,4 @@
-<h1>ToDo List</h1>
-<input type="text" placeholder="Enter new Task"#task>
-<br><br>
-<button (click)="addTask(task.value)">Add Task</button>
-<ul *ngFor="let item of list">
-    <li>{{item.name}} <button (click)="removeItem(item.id)">remove item</button></li>
+<h1>Reusable Component</h1>
+<ul *ngFor="let user of userDataisl">
+    <app-child [data]="user"></app-child>
 </ul>

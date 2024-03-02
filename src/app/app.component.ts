@@ -9,13 +9,10 @@ import { Component } from '@angular/core'
 })
 export class AppComponent {
   title = 'Angular 14';
-list:any[]=[];
-  addTask(data:string){
-    this.list.push({id:this.list.length, name :data})
-console.log(this.list)
-  }
-  removeItem(id:number){
-this.list=this.list.filter((item)=> item.id!==id)
-  }
-
+  userDataisl=[
+    {name:"Anil",email:"anil1@gmail.com"},
+    {name:"Anil1",email:"anil2@gmail.com"},
+    {name:"Anil2",email:"anil3@gmail.com"},
+    {name:"Anil3",email:"anil4@gmail.com"}
+  ]
 }
