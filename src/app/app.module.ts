@@ -3,17 +3,15 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import {FormsModule} from '@angular/forms';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap'
 import {MatButtonModule} from '@angular/material/button'
 import {MatBadgeModule} from '@angular/material/badge';
-import { CustomPipesPipe } from './pipes/custom-pipes.pipe';
+import {FormsModule} from '@angular/forms'
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    CustomPipesPipe,
   ],
   imports: [
     BrowserModule,

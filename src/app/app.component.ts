@@ -9,5 +9,8 @@ import { Component } from '@angular/core'
 })
 export class AppComponent {
   title = 'Angular 14';
+  userLogin(item:any){
+    console.log(item);
+  }
  
 }

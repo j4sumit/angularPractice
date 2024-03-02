@@ -1,2 +1,10 @@
-<h1>Custom Pipes in Angular </h1>
-<h2>{{20|customPipes:100}}</h2>
+<h1>Template Driven Form</h1>
+<form #loginform="ngForm" (ngSubmit)="userLogin(loginform.value)">
+    <input type="text" placeholder="enter name" name="name" ngModel>
+    <br><br>
+    <input type="text" placeholder="enter email" name="email" ngModel>
+    <br><br>
+    <input type="password" placeholder="enter password" name="password" ngModel>
+    <br><br>
+    <button>Submit</button>
+</form>
