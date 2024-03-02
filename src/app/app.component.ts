@@ -8,9 +8,8 @@ import {NgForm} from '@angular/forms'
 })
 export class AppComponent {
   title = 'Angular 14';
-  userData:any;
-getData(data:NgForm){
-  console.log(data)
-  this.userData=data;
+  show=true 
+toggle(){
+  this.show=!this.show;
 }
 }
