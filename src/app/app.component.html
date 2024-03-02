@@ -1,4 +1,3 @@
-<h1>Reusable Component</h1>
-<ul *ngFor="let user of userDataisl">
-    <app-child [data]="user"></app-child>
-</ul>
+<h1>Child to Parent data transfer</h1>
+<h2>{{item}}</h2>
+<app-child (updateEvent)="updateData($event)"></app-child>
