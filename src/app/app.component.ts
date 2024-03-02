@@ -9,5 +9,7 @@ import { Component } from '@angular/core'
 })
 export class AppComponent {
   title = 'Angular 14';
-data: any;
+  getVal(item:HTMLInputElement){
+console.log(item);
+  }
 }
