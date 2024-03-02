@@ -9,10 +9,5 @@ import { Component } from '@angular/core'
 })
 export class AppComponent {
   title = 'Angular 14';
-  item="X"
-
-  updateData(data:string){
-console.log(data);
-this.item=data;
-  }
+data: any;
 }
