@@ -9,8 +9,5 @@ import { Component } from '@angular/core'
 })
 export class AppComponent {
   title = 'Angular 14';
-  today= Date();
-  capString(item:string){
-return item.toUpperCase()
-  }
+  user={name:"sumit", email:"sumit@gmail.com"}
 }
