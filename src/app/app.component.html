@@ -1,1 +1,15 @@
-<app-header></app-header>
+<h1>Basic Form</h1>
+<form #basicform="ngForm" (ngSubmit)="getData(basicform.value)">
+    <input type="text" name="name" placeholder="Enter Name" ngModel>
+    <br/><br/>
+    <input type="text" name="email" placeholder="Enter Email"ngModel>
+    <br/><br/>
+    <input type="text" name="password" placeholder="Enter Password"ngModel>
+    <br/><br/>
+    <button>Register</button>
+</form>
+<ul>
+    <li>{{userData.name}}</li>
+    <li>{{userData.email}}</li>
+    <li>{{userData.password}}</li>
+</ul>
