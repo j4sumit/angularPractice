@@ -3,7 +3,10 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import {FormsModule} from '@angular/forms'
+import {FormsModule} from '@angular/forms';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap'
+import {MatButtonModule} from '@angular/material/button'
+import {MatBadgeModule} from '@angular/material/badge'
 
 @NgModule({
   declarations: [
@@ -12,7 +15,10 @@ import {FormsModule} from '@angular/forms'
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    NgbModule,
+    MatButtonModule,
+    MatBadgeModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
