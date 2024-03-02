@@ -1,10 +1,10 @@
-<h1>Template Driven Form</h1>
-<form #loginform="ngForm" (ngSubmit)="userLogin(loginform.value)">
-    <input type="text" placeholder="enter name" name="name" ngModel>
+<h1>Reactive Form</h1>
+<form [formGroup]="loginForm" (ngSubmit)="loginUser()">
+    <input type="text" placeholder="enter name" name="name"  formControlName="name">
     <br><br>
-    <input type="text" placeholder="enter email" name="email" ngModel>
+    <input type="text" placeholder="enter email" name="email"  formControlName="email">
     <br><br>
-    <input type="password" placeholder="enter password" name="password" ngModel>
+    <input type="password" placeholder="enter password" name="password" formControlName="password" >
     <br><br>
     <button>Submit</button>
 </form>

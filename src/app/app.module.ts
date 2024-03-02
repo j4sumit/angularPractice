@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap'
 import {MatButtonModule} from '@angular/material/button'
 import {MatBadgeModule} from '@angular/material/badge';
-import {FormsModule} from '@angular/forms'
+import {ReactiveFormsModule} from '@angular/forms'
 
 
 @NgModule({
@@ -16,7 +16,7 @@ import {FormsModule} from '@angular/forms'
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule,
+    ReactiveFormsModule,
     NgbModule,
     MatButtonModule,
     MatBadgeModule,

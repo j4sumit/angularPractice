@@ -1,4 +1,5 @@
 import { Component } from '@angular/core'
+import {FormControl, FormGroup} from '@angular/forms'
 
 
 
@@ -9,8 +10,13 @@ import { Component } from '@angular/core'
 })
 export class AppComponent {
   title = 'Angular 14';
-  userLogin(item:any){
-    console.log(item);
-  }
- 
+ loginForm= new FormGroup({
+  name:new FormControl(""),
+  email:new FormControl(""),
+  password: new FormControl("")
+ })
+ loginUser()
+ {
+  console.log(this.loginForm.value)
+ }
 }
