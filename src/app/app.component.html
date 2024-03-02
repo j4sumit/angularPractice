@@ -1,10 +1,14 @@
-<h1>Reactive Form</h1>
+<h1>Reactive Form Validation</h1>
 <form [formGroup]="loginForm" (ngSubmit)="loginUser()">
-    <input type="text" placeholder="enter name" name="name"  formControlName="name">
+    <input type="text" placeholder="enter name"  formControlName="name">
+    <br>
+    <span *ngIf="name && name.invalid && name.touched" style="color: red;">This field is not valid</span>
+    <br>
+    <input type="text" placeholder="enter email"  formControlName="email">
+    <br>
+    <span *ngIf="email && email.invalid && email.touched" style="color: red;">This field is not valid</span>
+    <br>
+    <input type="password" placeholder="enter password" formControlName="password" >
     <br><br>
-    <input type="text" placeholder="enter email" name="email"  formControlName="email">
-    <br><br>
-    <input type="password" placeholder="enter password" name="password" formControlName="password" >
-    <br><br>
-    <button>Submit</button>
+    <button [disabled]="loginForm.invalid">Submit</button>
 </form>
