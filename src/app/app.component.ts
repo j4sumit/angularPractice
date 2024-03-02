@@ -9,5 +9,5 @@ import { Component } from '@angular/core'
 })
 export class AppComponent {
   title = 'Angular 14';
-  user={name:"sumit", email:"sumit@gmail.com"}
+ 
 }

@@ -7,11 +7,13 @@ import {FormsModule} from '@angular/forms';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap'
 import {MatButtonModule} from '@angular/material/button'
 import {MatBadgeModule} from '@angular/material/badge';
+import { CustomPipesPipe } from './pipes/custom-pipes.pipe';
 
 
 @NgModule({
   declarations: [
     AppComponent,
+    CustomPipesPipe,
   ],
   imports: [
     BrowserModule,
