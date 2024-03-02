@@ -9,8 +9,13 @@ import { Component } from '@angular/core'
 })
 export class AppComponent {
   title = 'Angular 14';
-  show=true 
-toggle(){
-  this.show=!this.show;
-}
+list:any[]=[];
+  addTask(data:string){
+    this.list.push({id:this.list.length, name :data})
+console.log(this.list)
+  }
+  removeItem(id:number){
+this.list=this.list.filter((item)=> item.id!==id)
+  }
+
 }
