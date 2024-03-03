@@ -1,14 +1,9 @@
-<h1 >404 Page in Angular</h1>
-<a routerLink="">Home</a><br>
-<a routerLink="about">about</a><br>
-<a routerLink="user">user</a>
+<h1 >Service in Angular</h1>
 
-<br><br>
-<a routerLink="user/20">Sumit</a><br><br>
-<a routerLink="user/30">Amit</a><br><br>
-<a routerLink="user/40">Sanjay</a>
-<router-outlet></router-outlet>
-
-<ul *ngFor="let data of datas">
+<ul *ngFor="let data of users">
     <li>{{data.name}}</li>
+    <li>{{data.email}}</li>
+    <li>{{data.phone}}</li>
 </ul>
+
+<app-footer></app-footer>

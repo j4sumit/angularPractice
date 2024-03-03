@@ -1,6 +1,6 @@
 import { Component } from '@angular/core'
+import { UserServiceService } from './services/user-service.service';
 
-import { UserServiceService } from './service/user-service.service';
 
 
 
@@ -11,11 +11,12 @@ import { UserServiceService } from './service/user-service.service';
 })
 export class AppComponent {
 title = 'Angular 14';
-constructor(private userDatas: UserServiceService) { }
-datas:any;
-  ngOnInit(): void {
-this.datas=this.userDatas.users()
-console.log("mainpage",this.userDatas.users())
-  }
+users:any;
+constructor(private userData : UserServiceService){
+userData.users().subscribe((data)=>{
+  console.log("data",data)
+  this.users=data;
+})
+}
 
 }
