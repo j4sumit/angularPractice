@@ -1,6 +1,6 @@
-<h1>Reactive Form Validation</h1>
+<h1 appRedColor>Reactive Form Validation</h1>
 <form [formGroup]="loginForm" (ngSubmit)="loginUser()">
-    <input type="text" placeholder="enter name"  formControlName="name">
+    <input appRedColor type="text" placeholder="enter name"  formControlName="name">
     <br>
     <span *ngIf="name && name.invalid && name.touched" style="color: red;">This field is not valid</span>
     <br>
