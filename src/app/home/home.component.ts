@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {UserServiceService} from '../service/user-service.service'
 
 @Component({
   selector: 'app-home',
@@ -7,9 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
-
+  constructor(private userData: UserServiceService) { }
+datas:any;
   ngOnInit(): void {
+    console.log(this.userData.users())
+    this.datas=this.userData.users()
   }
 
 }

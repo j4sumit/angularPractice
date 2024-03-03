@@ -8,3 +8,7 @@
 <a routerLink="user/30">Amit</a><br><br>
 <a routerLink="user/40">Sanjay</a>
 <router-outlet></router-outlet>
+
+<ul *ngFor="let data of datas">
+    <li>{{data.name}}</li>
+</ul>
