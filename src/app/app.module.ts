@@ -8,8 +8,6 @@ import {MatButtonModule} from '@angular/material/button'
 import {MatBadgeModule} from '@angular/material/badge';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-import { AdminModule } from './admin/admin.module';
-import { UserModule } from './user/user.module';
 
 
 
@@ -26,8 +24,6 @@ import { UserModule } from './user/user.module';
     MatBadgeModule,
     HttpClientModule,
     FormsModule,
-    AdminModule,
-    UserModule
   ],
   providers: [],
   bootstrap: [AppComponent]

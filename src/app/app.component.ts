@@ -11,13 +11,4 @@ import { dataType } from './user';
 
 export class AppComponent {
 title = 'Angular 14';
-getData(){
-  const data:dataType={
-    name: "Sumit",
-    id: 10,
-    indian: true,
-    address: "4b/24 andheri"
-  }
-  return data;
-}
 }
