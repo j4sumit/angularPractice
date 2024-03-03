@@ -7,13 +7,17 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap'
 import {MatButtonModule} from '@angular/material/button'
 import {MatBadgeModule} from '@angular/material/badge';
 import {ReactiveFormsModule} from '@angular/forms';
-import { RedColorDirective } from './red-color.directive'
+import { UserComponent } from './user/user.component';
+import { HomeComponent } from './home/home.component';
+import { AboutComponent } from './about/about.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    RedColorDirective,
+    UserComponent,
+    HomeComponent,
+    AboutComponent,
   ],
   imports: [
     BrowserModule,
