@@ -5,5 +5,10 @@
     <li>{{data.email}}</li>
     <li>{{data.phone}}</li>
 </ul>
-
-<app-footer></app-footer>
+<!-- <app-footer></app-footer> -->
+<form #userform="ngForm" (ngSubmit)="submitData(userform.value)">
+    <input type="text" name="name" placeholder="enter name" ngModel><br><br>
+    <input type="text" name="email" placeholder="enter email" ngModel><br><br>
+    <input type="text" name="phone" placeholder="enter phone"ngModel><br><br>
+    <button>Submit</button>
+</form>

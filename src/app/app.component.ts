@@ -2,8 +2,6 @@ import { Component } from '@angular/core'
 import { UserServiceService } from './services/user-service.service';
 
 
-
-
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -16,6 +14,14 @@ constructor(private userData : UserServiceService){
 userData.users().subscribe((data)=>{
   console.log("data",data)
   this.users=data;
+})
+}
+
+submitData(data:any)
+{
+console.log(data);
+this.userData.saveUsers(data).subscribe((data)=>{
+  console.log(data);
 })
 }
 
