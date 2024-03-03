@@ -1,5 +1,6 @@
 import { Component } from '@angular/core'
-import { UserServiceService } from './services/user-service.service';
+import { dataType } from './user';
+
 
 
 @Component({
@@ -7,22 +8,16 @@ import { UserServiceService } from './services/user-service.service';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+
 export class AppComponent {
 title = 'Angular 14';
-users:any;
-constructor(private userData : UserServiceService){
-userData.users().subscribe((data)=>{
-  console.log("data",data)
-  this.users=data;
-})
+getData(){
+  const data:dataType={
+    name: "Sumit",
+    id: 10,
+    indian: true,
+    address: "4b/24 andheri"
+  }
+  return data;
 }
-
-submitData(data:any)
-{
-console.log(data);
-this.userData.saveUsers(data).subscribe((data)=>{
-  console.log(data);
-})
-}
-
 }

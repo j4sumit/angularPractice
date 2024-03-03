@@ -8,13 +8,12 @@ import {MatButtonModule} from '@angular/material/button'
 import {MatBadgeModule} from '@angular/material/badge';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-import { FooterComponent } from './footer/footer.component';
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    FooterComponent,
   ],
   imports: [
     BrowserModule,
