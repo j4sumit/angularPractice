@@ -1,4 +1,3 @@
 <h1>Reusable Component</h1>
-<ul *ngFor="let user of userDataisl">
-    <app-child [data]="user"></app-child>
-</ul>
+<app-child [item]="data"></app-child>
+<button (click)="updateData()">update child data</button>
